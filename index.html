@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Dia Fortmeier">
+    <title>Arrays1</title>
+</head>
+<body>
+  <form>
+  <h1>Dia Fortmeier, MG1C</h1>
+  <img src="arrays.png" alt="codecademy">
+  <p>Ik weet niet hoezo, maar ik heb niet de badges gekregen die u liet zien,<br> dus heb ik dit maar gebruikt om te laten zien dat ik de cursus wel heb gedaan.</p>
+  <fieldset>
+  <legend><b>Array van getallen</b></legend> <!-- Opdracht 1 -->
+  <p id="getallen"></p>
+	<script>
+ var getallen = '1, 2, 3, 4, 5, 6';
+ var nieuweLijn = getallen.split(', ');
+ var deRest = nieuweLijn.join(" <br> ");
+
+  document.getElementById("getallen").innerHTML = deRest;
+
+</script>
+</fieldset>
+
+<fieldset>
+<legend><b>Arrays van gerechten</b></legend> <!-- Opdracht 2 -->
+<p id="gerechten"></p>
+<script>
+  var gerechten = "Spaghetti, Pizza, Spinazie, Patat";
+  var nieuweLijn = gerechten.split(", ");
+  var deRest = nieuweLijn.join(" <br> ");
+
+  document.getElementById("gerechten").innerHTML = deRest;
+
+</script>
+</fieldset>
+
+<fieldset>
+<legend><b>Array getallen en strings</b></legend> <!-- Opdracht 3 -->
+<p id="getallen_strings"></p>
+<script>
+  var beide = "Nummer1, 420, MediaCollege, Programmeren, JavaScript, 666, HTML";
+  var nieuweLijn = beide.split(", ");
+  var deRest = nieuweLijn.join(" <br> ");
+
+   document.getElementById("getallen_strings").innerHTML = deRest;
+</script>
+</fieldset>
+
+<fieldset>
+<legend><b>Array voeg toe aan getallen en strings</b></legend> <!-- Opdracht 4 -->
+<p id="meer_getallen_strings"></p>
+<script>
+  var beideMeer = "Nummer1, 420, MediaCollege, Programmeren, JavaScript, 666, HTML";
+  var nieuweLijn = beideMeer.split(", ");
+  var deRest = nieuweLijn.push("360", "Toegevoegd", "Games");
+  var deRest = nieuweLijn.join(" <br> ");
+
+   document.getElementById("meer_getallen_strings").innerHTML = deRest;
+
+</script>
+</fieldset>
+
+<fieldset>
+<legend><b>Veranderen Elementen</b></legend> <!-- Opdracht 5 -->
+<p id="anderen_elementen"></p>
+<script>
+  var elementen = "Nummer1, 420, MediaCollege, Programmeren, JavaScript, 666, HTML";
+  var nieuweLijn = elementen.split(", ");
+  var deRest = nieuweLijn.shift();
+  var deRest = nieuweLijn.shift();
+  var deRest = nieuweLijn.shift();
+  var deRest = nieuweLijn.unshift("Index2 is veranderd");
+  var deRest = nieuweLijn.unshift("Index1 is veranderd");
+  var deRest = nieuweLijn.unshift("Index0 is veranderd");
+  var deRest = nieuweLijn.push("360", "Toegevoegd", "Games");
+  var deRest = nieuweLijn.join(" <br> ");
+
+   document.getElementById("anderen_elementen").innerHTML = deRest;
+
+</script>
+</fieldset>
+</form>
+
+<br>
+<a href="http://validator.w3.org/check?uri=referer" target="_blank">
+<img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+</body>
+</html>
